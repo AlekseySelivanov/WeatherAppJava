@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp"
+    android:gravity="center_vertical"
+    android:layout_centerVertical="true">
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="Sat, Nov 21"/>
+
+    <TextView
+        android:id="@+id/tvTemp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="20 C"/>
+
+    <ImageView
+        android:id="@+id/iconWeather"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icon02d"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/tvTemp"/>
+</RelativeLayout>
